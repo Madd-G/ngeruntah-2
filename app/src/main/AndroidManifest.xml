@@ -7,7 +7,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,29 +18,37 @@
         android:theme="@style/Theme.Ngeruntah"
         tools:targetApi="31">
         <activity
-            android:name=".view.LoginSignupPage"
+            android:name=".view.MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.MainActivity"
-            android:exported="false"></activity>
+            android:name=".view.LoginSignupPage"
+            android:exported="false" />
         <activity
             android:name=".view.JemputSampahActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".view.JenisSampahActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".view.RiwayatActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".view.ProfileForFragment"
-            android:exported="false" ></activity>
+            android:exported="false" />
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.SignUpActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
