@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1061143191592",
+    "project_id": "ngeruntah-auth",
+    "storage_bucket": "ngeruntah-auth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061143191592:android:8b94cd019a822ab4b0d51d",
+        "android_client_info": {
+          "package_name": "com.example.ngeruntah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061143191592-h8j1lesk2uhvhh8grheo8lg0usv9350v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe05VttIEcTAlkxznOF_xrprTCxOFFl7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061143191592-h8j1lesk2uhvhh8grheo8lg0usv9350v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
