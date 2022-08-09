@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         profile_icon.setOnClickListener{
-            val intent = Intent(this, ProfileForFragment::class.java)
+            val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
     }

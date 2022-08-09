@@ -29,7 +29,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/ic_launcher" />
+            app:srcCompat="@drawable/img" />
 
         <TextView
             android:id="@+id/tvLogin"
@@ -94,7 +94,7 @@
             android:gravity="center"
             android:text="Sign Up"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tvConneting"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -111,39 +111,5 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="@+id/btnSign"
             app:layout_constraintTop_toBottomOf="@+id/btnSign" />
-
-        <TextView
-            android:id="@+id/tvConneting"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Connect Using"
-            app:layout_constraintBottom_toTopOf="@+id/btnEmail"
-            app:layout_constraintEnd_toEndOf="@+id/btnSign"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/btnSign"
-            app:layout_constraintTop_toBottomOf="@+id/tvSignUp" />
-
-        <ImageButton
-            android:id="@+id/btnEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnPhone"
-            app:layout_constraintStart_toStartOf="@+id/tvConneting"
-            app:layout_constraintTop_toBottomOf="@+id/tvConneting"
-            app:srcCompat="@drawable/ic_baseline_email_24" />
-
-        <ImageButton
-            android:id="@+id/btnPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="118dp"
-            app:layout_constraintBottom_toBottomOf="@+id/btnEmail"
-            app:layout_constraintEnd_toEndOf="@+id/tvConneting"
-            app:layout_constraintStart_toEndOf="@+id/btnEmail"
-            app:layout_constraintTop_toTopOf="@+id/btnEmail"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/ic_baseline_local_phone_24" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

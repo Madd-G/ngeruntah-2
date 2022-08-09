@@ -24,7 +24,6 @@ class MainActivity2 : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
         auth = Firebase.auth
         binding.btnSignOut.setOnClickListener(this)
-        binding.btnEmailVerify.setOnClickListener(this)
 
         val currentUser = auth.currentUser
         if (currentUser == null) {
@@ -55,28 +54,7 @@ class MainActivity2 : AppCompatActivity(), View.OnClickListener {
             R.id.btnSignOut -> {
                 signOut()
             }
-            R.id.btnEmailVerify -> {
-                sendEmailVerification()
-            }
         }
-    }
-
-    private fun sendEmailVerification() {
-        binding.btnEmailVerify.isEnabled = false
-        val user = auth.currentUser!!
-        user.sendEmailVerification()
-            .addOnCompleteListener(this) { task ->
-                binding.btnEmailVerify.isEnabled = true
-                if (task.isSuccessful) {
-                    Toast.makeText(
-                        baseContext, "Verification email sent to ${user.email} ", Toast.LENGTH_SHORT
-                    ).show()
-                } else {
-                    Toast.makeText(
-                        baseContext, "Failed to send verification email.", Toast.LENGTH_SHORT
-                    ).show()
-                }
-            }
     }
 
     private fun signOut() {
@@ -90,7 +68,6 @@ class MainActivity2 : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun updateUI(currentUser: FirebaseUser) {
-        binding.btnEmailVerify.isVisible = false
         currentUser?.let {
             val name = currentUser.displayName
             val phoneNumber = currentUser.phoneNumber
@@ -98,18 +75,14 @@ class MainActivity2 : AppCompatActivity(), View.OnClickListener {
             val photoUrl = currentUser.photoUrl
             val emailVerified = currentUser.isEmailVerified
             val uid = currentUser.uid
-            binding.tvName.text = name
             if (TextUtils.isEmpty(name)) {
-                binding.tvName.text = "No Name"
             }
             binding.tvUserId.text = email
             for (profile in it.providerData) {
                 val providerId = profile.providerId
                 if (providerId == "password" && emailVerified == false) {
-                    binding.btnEmailVerify.isVisible = true
                 }
                 if (providerId == "phone") {
-                    binding.tvName.text = phoneNumber
                     binding.tvUserId.text = providerId
                 }
             }

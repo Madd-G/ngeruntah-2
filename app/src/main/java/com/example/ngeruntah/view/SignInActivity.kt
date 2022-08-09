@@ -25,8 +25,6 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
         binding.btnSign.setOnClickListener(this)
         binding.tvSignUp.setOnClickListener(this)
-        binding.btnEmail.setOnClickListener(this)
-        binding.btnPhone.setOnClickListener(this)
         auth = Firebase.auth
     }
 

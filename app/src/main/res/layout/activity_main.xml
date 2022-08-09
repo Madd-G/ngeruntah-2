@@ -38,7 +38,7 @@
                 android:layout_centerInParent="true"
                 android:layout_centerHorizontal="true"
                 android:elevation="9dp"
-                android:src="@drawable/signin_boy"
+                android:src="@drawable/logout"
                 app:civ_border_color="@color/colorPrimary"
                 app:civ_border_width="3dp" />
 

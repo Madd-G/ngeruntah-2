@@ -4,12 +4,27 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_baseline_email_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_baseline_local_phone_24.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/bg_rounded_bottom.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/bg_rounded_trans.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/bordershape.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/buttonshape.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/ic_back.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/ic_email_light_blue_24dp.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/ic_info.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/ic_spinner.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/ic_touch_app_white_24dp.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/spinner_background.xml" value="0.1435" />
         <entry key="app/src/main/res/layout/activity_jemput_sampah.xml" value="0.18085106382978725" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.18085106382978725" />
+        <entry key="app/src/main/res/layout/activity_login_signup_page.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18991546630859366" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.24443138609541226" />
         <entry key="app/src/main/res/layout/activity_riwayat.xml" value="0.18085106382978725" />
-        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.27845458984374993" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.18085106382978725" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1435" />
       </map>
     </option>
   </component>
